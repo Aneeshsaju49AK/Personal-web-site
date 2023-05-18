@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>AK Creation/Personal-Website</title>
+    <link rel="icon" type="image/xl-icon" href="/images/my-Brand.jpg">
+
+    <!-- css -->
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header">
+
+        <div class="container">
+            <nav>
+                <img src="images/my-Brand.jpg" class="logo" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class=" fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Flutter Developer</p>
+                <h1>Hi,I'm <span>Aneesh</span><br>Saju From India</h1>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/IMG-20230514-WA0039.jpg" alt="">
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-titles">About Me</h1>
+                    <p>Hi,There<br>
+                        My Self Aneesh saju from india,and my home state is kerala basicaly.<br>
+                        I'm passionate about stock trading and web Development.<br>
+                        Hobbies are
+                        <li>Bike riding</li>
+                        <li>Football</li>
+                        <li>Bascket ball</li>
+                        <li>Animal welfare</li>
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link"  onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>UI/UX</span><br>Building Andorid/iOS apps</li>
+                            <li><span>Share Market</span><br>Trader do swing & intraday</li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>As a Chairman</span><br>I have one year Experience of Chairmanship in my collage
+                            </li>
+                            <li><span>As a Public Relationship Officer</span><br>I also have one year Experience as a
+                                (PRO) in muthooth mini kothamangalam</li>
+                            <li><span>As a Supervisor cum Marketing</span><br>it was a start-up company we were served
+                                drinking bottle waters and soft drinks i was the incharge for marketing & supply chain
+                                management </li>
+                            <li><span>As a Social Worker</span><br>i have personal Experience in involving rescue
+                                operation conducted with fire force in flood time in kerala also a active member of
+                                civil force kerala</li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Web Development</span><br>from (2022)</li>
+                            <li><span>Share Market</span><br>from (2016)</li>
+                            <li><span>B.com</span><br>finance & Taxation (2016-2019)</li>
+                            <li><span>plus Two</span><br>NIOS in (2014-2015)</li>
+                            <li><span>10th</span><br>State (2012)</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-titles">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>UI/UX</h2>
+                    <p>
+                        Designing Web/App interfaces.Building Andorid/iOS apps
+                    </p>
+                    <a href="https://www.justinmind.com/ux-design/examples">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code-compare"></i>
+                    <h2>Web Design</h2>
+                    <p>Web app Development.</p>
+                    <a href="https://mobirise.com/html-templates/">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-money-bill-trend-up"></i>
+                    <h2>Share Mareket</h2>
+                    <p>Technical analysis,account management</p>
+                    <a href="https://www.tradingview.com/">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- protfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-titles">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/my-Brand.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social Media app</h3>
+                        <p>The app connects you the talented people around the world.</p>
+                        <a href=" https://aneeshsaju49ak.github.io/FIRSTPROJECT/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/my-Brand.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social Media app</h3>
+                        <p>The app connects you the talented people around the world.</p>
+                        <a href=" https://aneeshsaju49ak.github.io/tindog/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/my-Brand.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social Media app</h3>
+                        <p>The app connects you the talented people around the world.</p>
+                        <a href=" https://aneeshsaju49ak.github.io/LinkedIn-website/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-titles">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>aneeshsaju73official@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i></i>8848209619</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form id="submit-form" method="POST"
+                        action="https://script.google.com/macros/s/AKfycbxn9EPl4sep2pzFeHzCrsGxW7THR93H8i1ucMBV7R9pTKRZYryWioVHcw7yKitL8rRcSg/exec">
+                        <input type="text" name="Name" placeholder="your Name" required>
+                        <input type="email" name="Email" placeholder="your Email" required>
+                        <textarea name="Message" rows="6" placeholder="your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bootstrap -->
+
+    
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/0dbf4efa44.js" crossorigin="anonymous"></script>
+    <script data-cfasync="false" type="text/javascript"
+        src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</body>
+
+</html>
